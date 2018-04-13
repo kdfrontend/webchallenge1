@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebCh1</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <header class="logo">
+        <img src="images/logo-top.png" alt="site logo">
+    </header>
+    <div class="container">
+        <!--       Formularz 1-->
+        <div class="column">
+            <div class="form-1">
+                <h1>Register Form</h1>
+                <div class=form-shadow>
+                    <div class=form>
+                        <form action="#">
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="password" name="password" placeholder="Confirm Password" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <select name="cities" placeholder="Your Location" required>
+               <option>Your Location</option>
+                <option value="Warszawa">Warszawa</option>
+                <option value="Kraków">Kraków</option>
+                <option value="Gdańsk">Gdańsk</option>
+                <option value="Wrocław">Wrocław</option>
+                <option value="Koszalin">Koszalin</option>
+                <option value="Płock">Płock</option>
+            </select>
+                            <div class="check-container">
+                                <input type="checkbox" required id="check-1">
+                                <label for="check-1"></label>
+                                <p>I have read and accept the terms of use.</p>
+                            </div>
+                            <input type="submit" name="submit" value="Sign up" class="green">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--        Formularz 2-->
+            <div class=form-2>
+                <h1>Send Email</h1>
+                <div class=form-shadow>
+                    <div class=form>
+                        <form action="#">
+                            <input type="text" name="username" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea rows="8" cols="35" placeholder="Type your message..." required></textarea>
+                            <div class="check-container">
+                                <input type="checkbox" id="check-2">
+                                <label for="check-2"></label>
+                                <p>Send a copy to my Email</p>
+                            </div>
+                            <input type="submit" name="submit" value="Send Email" class="green">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--            Formularz 3-->
+        <div class="column">
+            <div class="form-3">
+                <h1>Sign in Form</h1>
+                <div class=form-shadow>
+                    <div class=form>
+                        <form action="#">
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <div class="column-in">
+                                <div class="check-container small">
+                                    <input type="checkbox" name="checkbox" id="check-3">
+                                    <label for="check-3"></label>
+                                    <p>Remember me</p>
+                                </div>
+                                <input type="submit" name="submit" value="Sign in" class="green small">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--Formularz 4-->
+
+            <div class="form-4">
+                <h1>Recover Form</h1>
+                <div class=form-shadow>
+                    <div class=form>
+                        <form action="#">
+                            <input type="email" name="email" placeholder="Enter your Email" required>
+                            <input type="tel" name="tel" placeholder="Enter your Phone number" required>
+                            <div class="column-in top-m">
+                                <input type="submit" name="submit" value="Send" class="green small">
+                                <input type="submit" name="submit" value="Done" disabled class="disabled green small">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--Formularz 5-->
+            <div class="form-5">
+                <h1>Subscribe Form</h1>
+                <div class=form-shadow>
+                    <div class=form>
+                        <form action="#">
+                            <input type="email" name="email" placeholder="Enter your Email" required>
+                            <div class="column-in top-m">
+                                <input type="submit" name="submit" value="Subscribe" class="green small">
+                                <input type="submit" name="submit" value="No, Thanks" class="red small">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-logo">
+                <img src="images/logo-bottom.png" alt="bottom logo">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

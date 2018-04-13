@@ -1,0 +1,262 @@
+html {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background: url(../images/background.jpg) no-repeat top center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+header img {
+    margin: 0 auto;
+    display: block;
+    padding-top: 40px;
+    opacity: 0.3;
+    width: 95%;
+}
+
+.form {
+    border-radius: 3px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+.form-shadow {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form input,
+form textarea,
+form select {
+    border: 1px solid #c6c6c6;
+    outline: 0;
+    resize: none;
+    margin-top: 20px;
+    padding-left: 72px;
+    text-decoration: none;
+    height: 38px;
+    border-radius: 3px;
+    color: #afafaf;
+}
+
+form textarea {
+    background: linear-gradient(to bottom, rgba(246, 246, 246, 1) 0%, rgba(247, 247, 247, 1) 20%, rgba(246, 246, 246, 1) 50%, rgba(240, 240, 240, 1) 95%, rgba(243, 243, 243, 1) 100%);
+    padding-left: 15px;
+    height: 230px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #afafaf;
+}
+
+
+form input:first-child {
+    margin-top: 0;
+}
+
+input[name="username"] {
+    background: url(../images/user-icon.png) no-repeat 15px center, url(../images/vline.png) no-repeat 52px center, linear-gradient(to bottom, rgba(246, 246, 246, 1) 0%, rgba(247, 247, 247, 1) 20%, rgba(246, 246, 246, 1) 50%, rgba(240, 240, 240, 1) 95%, rgba(243, 243, 243, 1) 100%);
+}
+
+input[name="password"] {
+    background: url(../images/lock-icon.png) no-repeat 17px center, url(../images/vline.png) no-repeat 52px center, linear-gradient(to bottom, rgba(246, 246, 246, 1) 0%, rgba(247, 247, 247, 1) 20%, rgba(246, 246, 246, 1) 50%, rgba(240, 240, 240, 1) 95%, rgba(243, 243, 243, 1) 100%);
+}
+
+input[name="email"] {
+    background: url(../images/envelope-icon.png) no-repeat 15px center, url(../images/vline.png) no-repeat 52px center, linear-gradient(to bottom, rgba(246, 246, 246, 1) 0%, rgba(247, 247, 247, 1) 20%, rgba(246, 246, 246, 1) 50%, rgba(240, 240, 240, 1) 95%, rgba(243, 243, 243, 1) 100%);
+}
+
+input[name="tel"] {
+    background: url(../images/phone-icon.png) no-repeat 20px center, url(../images/vline.png) no-repeat 52px center, linear-gradient(to bottom, rgba(246, 246, 246, 1) 0%, rgba(247, 247, 247, 1) 20%, rgba(246, 246, 246, 1) 50%, rgba(240, 240, 240, 1) 95%, rgba(243, 243, 243, 1) 100%);
+}
+
+form select {
+    background: url(../images/maps-icon.png) no-repeat 22px center, url(../images/vline.png) no-repeat 52px center, url(../images/arrow-icon.png) no-repeat right 15px center, linear-gradient(to bottom, rgba(246, 246, 246, 1) 0%, rgba(247, 247, 247, 1) 20%, rgba(246, 246, 246, 1) 50%, rgba(240, 240, 240, 1) 95%, rgba(243, 243, 243, 1) 100%);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 42px;
+}
+
+input[name="submit"] {
+    color: white;
+    padding: 0;
+    cursor: pointer;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-top: 15px;
+}
+
+input[name="submit"].disabled {
+    cursor: default;
+}
+
+.green {
+    background: linear-gradient(to bottom, rgba(163, 215, 66, 1) 0%, rgba(156, 212, 53, 1) 25%, rgba(147, 207, 42, 1) 50%, rgba(134, 199, 35, 1) 75%, rgba(126, 194, 30, 1) 100%);
+    border: 1px solid #3b9a00
+}
+
+.disabled {
+    filter: saturate(50%) brightness(110%);
+    border: 1px solid #90ca6d;
+}
+
+.red {
+    background: linear-gradient(to bottom, rgba(246, 94, 112, 1) 0%, rgba(245, 86, 103, 1) 25%, rgba(244, 73, 91, 1) 50%, rgba(242, 64, 81, 1) 75%, rgba(240, 55, 71, 1) 100%);
+    border: 1px solid #a2202a;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+    height: 25px;
+}
+
+.check-container {
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+}
+
+.check-container label {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    border: 1px solid #afafaf;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.check-container label::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: linear-gradient(to bottom, rgba(157, 210, 48, 1) 0%, rgba(134, 199, 19, 1) 50%, rgba(115, 186, 14, 1) 100%);
+    position: absolute;
+    border-radius: 2px;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+}
+
+input:checked + label::after {
+    opacity: 1;
+}
+
+.check-container p {
+    margin-top: 2px;
+    padding-left: 30px;
+    color: #afafaf;
+    margin-bottom: 0;
+    line-height: 1.3;
+
+}
+
+.bottom-logo img {
+    opacity: 0.3;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    padding: 15px 0;
+}
+
+.column-in.top-m {
+    margin-top: 20px
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0px 0px 10px 0px rgba(157, 213, 56, 1);
+}
+
+input[type="submit"]:hover {
+    filter: brightness(105%);
+}
+
+input[type="submit"].disabled:hover {
+    filter: saturate(50%) brightness(110%);
+    border: 1px solid #90ca6d;
+}
+
+@media(min-width: 350px) {
+    .form-shadow {
+        width: 80%;
+    }
+}
+
+@media(min-width: 425px) {
+    header img {
+        width: 419px;
+    }
+}
+
+@media(min-width: 875px) {
+    .column {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .column-in {
+        display: flex;
+        width 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+    }
+    input[type=submit].small,
+    .check-container.small {
+        margin-top: 0;
+        width: 45%
+    }
+    .check-container.small {
+        width: 55%
+    }
+    .bottom-logo {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .bottom-logo img {
+        width: 90%;
+        align-self: center;
+        opacity: 0.3;
+    }
+}
+
+@media(min-width: 1200px) {
+    .column {
+        width: 40%;
+    }
+}
